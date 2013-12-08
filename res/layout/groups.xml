@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/name_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/away_header"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/away"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name_group"
+        android:background="@drawable/away" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/away"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_toggle" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/away"
+        android:background="@drawable/away_message"
+        android:paddingLeft="10dp"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/users"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/message"
+        android:background="@drawable/users" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Save" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/save"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/users"
+        android:background="@drawable/list3" >
+    </ListView>
+
+</RelativeLayout>

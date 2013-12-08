@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- The child Views/Layout to flip -->
+
+
+        <!-- Layout 1 for 1st Screen -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/list2"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/add" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_page" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- Layout 2 for 2nd Screen -->
+
+        <LinearLayout
+            android:id="@+id/MainLayout" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/text_received"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/UpdateList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                
+                android:text="Received SMS list" />
+
+            <ListView
+                android:id="@+id/SMSList"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip" />
+        </LinearLayout>
+</ViewFlipper>
+
+</LinearLayout>
